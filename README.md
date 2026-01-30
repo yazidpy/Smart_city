@@ -1,21 +1,6 @@
 # Smart City Traffic Dashboard
 
 Un système complet d’analyse de trafic urbain en temps réel basé sur l’IA (YOLOv8), avec un backend FastAPI et un frontend Next.js modernes.
-
----
-
-## Table des matières
-
-1. [Vue d’ensemble](#vue-densemble)
-2. [Entraînement YOLOv8](#entraînement-yolov8)
-3. [Architecture du projet](#architecture-du-projet)
-4. [Installation](#installation)
-5. [Utilisation](#utilisation)
-6. [Déploiement](#déploiement)
-7. [Performance et optimisations](#performance-et-optimisations)
-8. [API](#api)
-9. [Contributions](#contributions)
-
 ---
 
 ## Vue d’ensemble
@@ -71,27 +56,25 @@ Le modèle atteint une bonne détection sur les scènes de trafic urbain, même 
 
 ```
 Smart_City/
-├── backend/                 # FastAPI + OpenCV + YOLO
-│   ├── main.py             # Serveur API + endpoints
-│   ├── pipeline.py         # Pipeline vidéo + inférence YOLO
-│   ├── models.py           # SQLite + CRUD caméras
+├── backend/                
+│   ├── main.py             
+│   ├── pipeline.py        
+│   ├── models.py          
 │   ├── video_test/         # Vidéos de test (.mp4)
 │   └── requirements.txt
-├── frontend/               # Next.js + Tailwind + shadcn/ui
+├── frontend/              
 │   ├── src/app/(app)/
-│   │   ├── dashboard/      # Tableau de bord
-│   │   ├── streaming/      # Flux vidéo + sélection
-│   │   ├── cameras/        # CRUD caméras
-│   │   └── layout.tsx      # Sidebar + dark mode
+│   │   ├── dashboard/     
+│   │   ├── streaming/    
+│   │   ├── cameras/        
+│   │   └── layout.tsx     
 │   ├── src/components/
-│   │   ├── ui/             # Composants réutilisables
+│   │   ├── ui/            
 │   │   └── theme-provider.tsx
 │   ├── package.json
 │   └── tailwind.config.ts
 ├── Train/                  # Résultats entraînement YOLO
 │   └── detect/train3/weights/best.pt
-├── DEPLOY.md               # Guide déploiement
-├── docker-compose.yml
 └── README.md
 ```
 
