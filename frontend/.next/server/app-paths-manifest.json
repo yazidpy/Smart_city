@@ -1,0 +1,4 @@
+{
+  "/(app)/streaming/page": "app/(app)/streaming/page.js",
+  "/(app)/dashboard/page": "app/(app)/dashboard/page.js"
+}
