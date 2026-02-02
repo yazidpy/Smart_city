@@ -86,7 +86,6 @@ Smart_City/
 
 - Python 3.10+
 - Node.js 18+
-- Docker (optionnel, pour déploiement)
 
 ### Backend
 
